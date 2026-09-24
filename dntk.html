@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आचार्य आशीष जी - अपॉइंटमेंट</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f2eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            text-align: center;
+            border-top: 6px solid #d9534f;
+        }
+
+        .profile-header h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .profile-header p {
+            color: #e67e22;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            background-color: #fdfaf4;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 4px solid #f39c12;
+            text-align: left;
+        }
+
+        .appointment-form {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #d9534f;
+        }
+
+        .submit-btn {
+            background-color: #d9534f;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- हेडिंग और अनुभव -->
+        <div class="profile-header">
+            <h1>आचार्य आशीष जी</h1>
+            <p>अनुभव: 20 वर्ष</p>
+        </div>
+
+        <!-- परिचय -->
+        <div class="intro-text">
+            नमस्कार! ज्योतिष, वास्तु एवं अध्यात्म परामर्श के लिए अपॉइंटमेंट बुक करें। नीचे अपनी जानकारी भरें।
+        </div>
+
+        <!-- ⚠️ 'your-email@gmail.com' की जगह अपनी असली Gmail ID लिखें -->
+        <form action="https://formsubmit.co/gauniyalsantishi16@gmail.com" method="POST" class="appointment-form">
+            
+            <!-- सब्जेक्ट (Subject) जो आपकी ईमेल पर लिखा आएगा -->
+            <input type="hidden" name="_subject" value="🚩 नया अपॉइंटमेंट बुक हुआ है!">
+            
+            <!-- स्पैम रोकने के लिए -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-group">
+                <label for="name">अपना नाम दर्ज करें:</label>
+                <input type="text" name="नाम" placeholder="आपका पूरा नाम" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">अपना मोबाइल नंबर दर्ज करें:</label>
+                <input type="tel" name="मोबाइल नंबर" placeholder="10 अंकों का नंबर" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">अपना पता दर्ज करें:</label>
+                <textarea name="पता" placeholder="आपका पूरा पता" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="date">तारीख दर्ज करें:</label>
+                <input type="date" name="अपॉइंटमेंट तारीख" required>
+            </div>
+
+            <button type="submit" class="submit-btn">अपॉइंटमेंट बुक करें</button>
+        </form>
+    </div>
+
+</body>
+</html>
